@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./image/favicon.png">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">To-Do List</h1>
+        <div class="form-group">
+            <input type="text" class="form-control mb-2" id="title" placeholder="Task Title" required>
+            <textarea class="form-control mb-2" id="description" placeholder="Task Description" required></textarea>
+            <input type="date" class="form-control mb-2" id="date" required>
+            <input type="time" class="form-control mb-2" id="time" required>
+            <div id="error-message" class="text-danger"></div>
+            <button class="btn btn-success btn-block" onclick="addTask()">Add Task</button>
+        </div>
+        <h2 class="mt-4">Pending Tasks</h2>
+        <ul id="pending-tasks" class="list-group"></ul>
+        <h2 class="mt-4">Completed Tasks</h2>
+        <ul id="completed-tasks" class="list-group"></ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('./image/bg2.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000000;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+.text-dark {
+    color: #000000;
+}
+
+.form-group input, .form-group textarea {
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #ccc;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: #999;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f8f8f8;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+}
+
+ul li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+button {
+    margin-left: 5px;
+}
